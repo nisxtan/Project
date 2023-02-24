@@ -1,0 +1,120 @@
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --grey: #6b7280;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+  --light: #eee;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: var(--light);
+  background-color: var(--darker);
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.box {
+  width: 27.5%;
+  height: 50%;
+  float: right;
+  margin-top: 150px;
+  margin-right: 190px;
+  background-color: var(--dark);
+  line-height: 40px;
+  border: 0px solid var(--darkest);
+  padding: 30px 50px;
+  border-radius: 6px;
+  box-shadow: var(--darkest);
+}
+.words {
+  float: left;
+  margin-top: 200px;
+  margin-left: 160px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+p {
+  font-size: 30px;
+  font-family: sans-serif;
+  line-height: 2px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"],
+input[type="button"] {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  line-height: 15px;
+  border: 0px;
+  padding: 20px;
+  border-radius: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 87%;
+  border: 3px solid var(--grey);
+  font-size: 20px;
+}
+.link {
+  margin: 10px;
+  text-align: center;
+  font-family: "Fira sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+.hr {
+  border: 1px solid var(--light);
+}
+input[type="submit"] {
+  background-color: var(--grey);
+  color: var(--light);
+  font-weight: bold;
+  font-size: 20px;
+  width: 97%;
+}
+input[type="button"] {
+  background-color: var(--grey);
+  color: var(--light);
+  font-weight: bold;
+  font-size: 16px;
+  width: 65%;
+  margin: auto;
+  margin-top: 20px;
+}
+input[type="button"]:hover {
+  background-color: var(--darker);
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: var(--darker);
+  cursor: pointer;
+}
+.words h1 {
+  font-size: 60px;
+  font-family: "Fira sans", sans-serif;
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.words h3 {
+  font-size: 20px;
+  color: var(--light);
+  line-height: 30px;
+  text-align: justify;
+}
+
+h3 {
+  text-align: center;
+}
